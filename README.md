@@ -21,13 +21,20 @@ File,Description
 data_cleaning.py:
 "Python script for standardizing date-times, handling nulls, and text normalization."
 
+<img width="977" height="418" alt="Screenshot 2026-01-05 230716" src="https://github.com/user-attachments/assets/04566341-88be-4095-838a-05e3f0afbe2e" />
+
+
 sql_query.sql:
 Advanced SQL scripts for schema creation and KPI calculations.
+
+<img width="1014" height="592" alt="Screenshot 2026-01-06 001710" src="https://github.com/user-attachments/assets/f7f6e4de-27ff-453a-8b24-81dfccc3922d" />
+
 
 hospital_analytics_questions:
 .sql,Business-logic queries addressing specific clinical and financial objectives.
 
 Hospital patient Record Dashboard:
+
 <img width="1339" height="758" alt="Screenshot 2026-01-06 115737" src="https://github.com/user-attachments/assets/547b64b3-647d-4545-b816-49af54f59d62" />
 
 pbix,Interactive Power BI dashboard file.
