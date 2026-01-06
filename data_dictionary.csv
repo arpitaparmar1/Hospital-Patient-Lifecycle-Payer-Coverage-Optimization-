@@ -1,0 +1,66 @@
+,Unnamed: 0.6,Unnamed: 0.5,Unnamed: 0.4,Unnamed: 0.3,Unnamed: 0.2,Unnamed: 0.1,Unnamed: 0,Table,Field,Description
+0,0,0,0,0,0,0,0,encounters,TABLE_SUMMARY,Patient encounter data
+1,1,1,1,1,1,1,1,encounters,Id,Primary Key. Unique Identifier of the encounter.
+2,2,2,2,2,2,2,2,encounters,Start,The date and time (iso8601 UTC Date (yyyy-MM-dd'T'HH:mm'Z')) the encounter started
+3,3,3,3,3,3,3,3,encounters,Stop,The date and time (iso8601 UTC Date (yyyy-MM-dd'T'HH:mm'Z')) the encounter concluded
+4,4,4,4,4,4,4,4,encounters,Patient,Foreign key to the Patient.
+5,5,5,5,5,5,5,5,encounters,Organization,Foreign key to the Organization.
+6,6,6,6,6,6,6,6,encounters,Payer,Foreign key to the Payer.
+7,7,7,7,7,7,7,7,encounters,EncounterClass,"The class of the encounter, such as ambulatory, emergency, inpatient, wellness, or urgentcare"
+8,8,8,8,8,8,8,8,encounters,Code,Encounter code from SNOMED-CT
+9,9,9,9,9,9,9,9,encounters,Description,Description of the type of encounter.
+10,10,10,10,10,10,10,10,encounters,Base_Encounter_Cost,"The base cost of the encounter, not including any line item costs related to medications, immunizations, procedures, or other services."
+11,11,11,11,11,11,11,11,encounters,Total_Claim_Cost,"The total cost of the encounter, including all line items."
+12,12,12,12,12,12,12,12,encounters,Payer_Coverage,The amount of cost covered by the Payer.
+13,13,13,13,13,13,13,13,encounters,ReasonCode,"Diagnosis code from SNOMED-CT, only if this encounter targeted a specific condition."
+14,14,14,14,14,14,14,14,encounters,ReasonDescription,Description of the reason code.
+15,15,15,15,15,15,15,15,organizations,TABLE_SUMMARY,Hospital details
+16,16,16,16,16,16,16,16,organizations,Id,Primary key of the Organization.
+17,17,17,17,17,17,17,17,organizations,Name,Name of the Organization.
+18,18,18,18,18,18,18,18,organizations,Address,Organization's street address without commas or newlines.
+19,19,19,19,19,19,19,19,organizations,City,Street address city.
+20,20,20,20,20,20,20,20,organizations,State,Street address state abbreviation.
+21,21,21,21,21,21,21,21,organizations,Zip,Street address zip or postal code.
+22,22,22,22,22,22,22,22,organizations,Lat,Latitude of Organization's address.
+23,23,23,23,23,23,23,23,organizations,Lon,Longitude of Organization's address.
+24,24,24,24,24,24,24,24,patients,TABLE_SUMMARY,Patient demographic data.
+25,25,25,25,25,25,25,25,patients,Id,Primary Key. Unique Identifier of the patient.
+26,26,26,26,26,26,26,26,patients,BirthDate,The date (YYYY-MM-DD) the patient was born.
+27,27,27,27,27,27,27,27,patients,DeathDate,The date (YYYY-MM-DD) the patient died.
+28,28,28,28,28,28,28,28,patients,Prefix,"Name prefix, such as Mr., Mrs., Dr., etc."
+29,29,29,29,29,29,29,29,patients,First,First name of the patient.
+30,30,30,30,30,30,30,30,patients,Middle,Middle name of the patient.
+31,31,31,31,31,31,31,31,patients,Last,Last or surname of the patient.
+32,32,32,32,32,32,32,32,patients,Suffix,"Name suffix, such as PhD, MD, JD, etc."
+33,33,33,33,33,33,33,33,patients,Maiden,Maiden name of the patient.
+34,34,34,34,34,34,34,34,patients,Marital,"Marital Status. M is married, S is single. Currently no support for divorce (D) or widowing (W)"
+35,35,35,35,35,35,35,35,patients,Race,Description of the patient's primary race.
+36,36,36,36,36,36,36,36,patients,Ethnicity,Description of the patient's primary ethnicity.
+37,37,37,37,37,37,37,37,patients,Gender,"Gender. M is male, F is female."
+38,38,38,38,38,38,38,38,patients,BirthPlace,Name of the town where the patient was born.
+39,39,39,39,39,39,39,39,patients,Address,Patient's street address without commas or newlines.
+40,40,40,40,40,40,40,40,patients,City,Patient's address city.
+41,41,41,41,41,41,41,41,patients,State,Patient's address state.
+42,42,42,42,42,42,42,42,patients,County,Patient's address county.
+43,43,43,43,43,43,43,43,patients,FIPS County Code,Patient's FIPS county code.
+44,44,44,44,44,44,44,44,patients,Zip,Patient's zip code.
+45,45,45,45,45,45,45,45,patients,Lat,Latitude of Patient's address.
+46,46,46,46,46,46,46,46,patients,Lon,Longitude of Patient's address.
+47,47,47,47,47,47,47,47,payers,TABLE_SUMMARY,Insurance payer data.
+48,48,48,48,48,48,48,48,payers,Id,Primary key of the Payer (e.g. Insurance).
+49,49,49,49,49,49,49,49,payers,Name,Name of the Payer.
+50,50,50,50,50,50,50,50,payers,Address,Payer's street address without commas or newlines.
+51,51,51,51,51,51,51,51,payers,City,Street address city.
+52,52,52,52,52,52,52,52,payers,State_Headquartered,Street address state abbreviation.
+53,53,53,53,53,53,53,53,payers,Zip,Street address zip or postal code.
+54,54,54,54,54,54,54,54,payers,Phone,Payer's phone number.
+55,55,55,55,55,55,55,55,procedures,TABLE_SUMMARY,Patient procedure data including surgeries.
+56,56,56,56,56,56,56,56,procedures,Start,The date and time (iso8601 UTC Date (yyyy-MM-dd'T'HH:mm'Z')) the procedure was performed.
+57,57,57,57,57,57,57,57,procedures,Stop,"The date and time (iso8601 UTC Date (yyyy-MM-dd'T'HH:mm'Z')) the procedure was completed, if applicable."
+58,58,58,58,58,58,58,58,procedures,Patient,Foreign key to the Patient.
+59,59,59,59,59,59,59,59,procedures,Encounter,Foreign key to the Encounter where the procedure was performed.
+60,60,60,60,60,60,60,60,procedures,Code,Procedure code from SNOMED-CT
+61,61,61,61,61,61,61,61,procedures,Description,Description of the procedure.
+62,62,62,62,62,62,62,62,procedures,Base_Cost,The line item cost of the procedure.
+63,63,63,63,63,63,63,63,procedures,ReasonCode,Diagnosis code from SNOMED-CT specifying why this procedure was performed.
+64,64,64,64,64,64,64,64,procedures,ReasonDescription,Description of the reason code.
