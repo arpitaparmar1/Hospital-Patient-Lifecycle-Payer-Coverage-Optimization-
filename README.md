@@ -28,6 +28,8 @@ hospital_analytics_questions:
 .sql,Business-logic queries addressing specific clinical and financial objectives.
 
 Hospital patient Record Dashboard:
+<img width="1339" height="758" alt="Screenshot 2026-01-06 115737" src="https://github.com/user-attachments/assets/547b64b3-647d-4545-b816-49af54f59d62" />
+
 pbix,Interactive Power BI dashboard file.
 
 Hospital Patient Lifecycle Study.pptx:
